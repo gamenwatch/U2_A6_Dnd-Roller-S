@@ -7,11 +7,14 @@
 package u2_a6_dnd.rolloer;
 
 /**
- *
- * @author jalac9997
+ * Jacob Lacey
+ * Nov 21, 2018
+ * Allows you to roll a vast amount of different dies
  */
 public class U2_A6_DnDRolloer {
-
+    
+    
+    
     /**
      * @param args the command line arguments
      */
