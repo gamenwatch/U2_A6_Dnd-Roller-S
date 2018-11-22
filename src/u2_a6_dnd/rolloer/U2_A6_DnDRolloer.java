@@ -50,7 +50,7 @@ public class U2_A6_DnDRolloer {
      * Rolls the d2 dice the requested number of times
      * @param DTWO ~ The max for a d2 dice
      * @param rollXTimes ~ How many times should it be rolled
-     * @return total ~ null
+     * @return diceTotal ~ The sum of all the d2 rolls
      */
     public static int dtwoRoll(final int DTWO, int rollXTimes) {
         //Random Generation
@@ -89,6 +89,7 @@ public class U2_A6_DnDRolloer {
         Scanner keyedInput = new Scanner(System.in);
         Random randGen = new Random();
         boolean continueLoop = true;
+        int rollXTimes;
         
         //Dice Types (Double for random later)
         final int DTWO = 2;
@@ -108,9 +109,13 @@ public class U2_A6_DnDRolloer {
             
             switch (choicePick) {
                 case 1: //d2
-                    int rollXTimes;
                     rollXTimes = rollTimes();    
                     System.out.println("The sum of the rolls is: "+dtwoRoll(DTWO, rollXTimes)+"\n");
+                    break;
+                case 2: //d3
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+dtwoRoll(DTWO, rollXTimes)+"\n");
+                    break;
             }
         }
     }
