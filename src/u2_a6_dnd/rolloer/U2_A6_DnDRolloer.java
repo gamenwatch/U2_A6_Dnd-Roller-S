@@ -50,7 +50,7 @@ public class U2_A6_DnDRolloer {
      * Rolls the d2 dice the requested number of times
      * @param DTWO ~ The max for a d2 dice
      * @param rollXTimes ~ How many times should it be rolled
-     * @return diceTotal ~ The sum of all the d2 rolls
+     * @return diceTotal ~ The sum of all the rolls
      */
     public static int dtwoRoll(final int DTWO, int rollXTimes) {
         //Random Generation
@@ -79,19 +79,229 @@ public class U2_A6_DnDRolloer {
                 
     }
     
+    /**
+     * Rolls the d3 dice the requested number of times
+     * @param DTHREE ~ The max for a d3 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int dthreeRoll(final int DTHREE, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DTHREE);
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Rolls the d4 dice the requested number of times
+     * @param DFOUR ~ The max for a d4 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int dfourRoll(final int DFOUR, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DFOUR);
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Rolls the d6 dice the requested number of times
+     * @param DSIX ~ The max for a d6 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int dsixRoll(final int DSIX, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DSIX);
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Rolls the d8 dice the requested number of times
+     * @param DEIGHT ~ The max for a d8 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int deightRoll(final int DEIGHT, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DEIGHT );
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Rolls the d10 dice the requested number of times
+     * @param DTEN ~ The max for a d10 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int dtenRoll(final int DTEN, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DTEN );
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Rolls the d20 dice the requested number of times
+     * @param DTWENTY ~ The max for a d20 dice
+     * @param rollXTimes ~ How many times should it be rolled
+     * @return diceTotal ~ The sum of all the rolls
+     */
+    public static int dtwentyRoll(final int DTWENTY, int rollXTimes) {
+        //Random Generation
+        Random randGen = new Random();
+        
+        int diceTotal = 0; // sum of the rolls
+        
+        //generate random digits
+            int []diceRoll = new int [rollXTimes];
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // ROLL THE DICE
+            {
+                diceRoll[i] = 0; //clear the previous
+                diceRoll[i] = 1 + randGen.nextInt(DTWENTY );
+               System.out.println("Roll:"+diceRoll[i]); //displayed for tetsing
+            }
+            
+            for (int i = 0; i < rollXTimes; i = i+1) // SUM THE ROLLS
+            {
+               diceTotal = diceTotal + diceRoll[i];
+            }
+            
+            System.out.println("");
+        
+        return diceTotal;
+                
+    }
+    
+    /**
+     * Changes boolean to terminate the program
+     * @param continueLoop ~ True means the menu will reopen once the previous roll is finished
+     * @return continueLoop ~ The sum of all the rolls
+     */
+    public static boolean exitLaunch(boolean continueLoop) {
+        System.out.println("\nThanks for using us. Happy adventuring!");
+        continueLoop = false;
+        return continueLoop;
+        
+    }
+    
     ///////////////////////////////////////MAIN/////////////////////////////
     
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Variables / Constants
-        Scanner keyedInput = new Scanner(System.in);
-        Random randGen = new Random();
-        boolean continueLoop = true;
-        int rollXTimes;
+        //Variables & Constants
+        Scanner keyedInput = new Scanner(System.in); //to navigate menu
+        Random randGen = new Random(); //for dice rolls
+        boolean continueLoop = true; //menu will run till false
+        int rollXTimes; //how many times the dice will be rolled
         
-        //Dice Types (Double for random later)
+        //Dice Types
         final int DTWO = 2;
         final int DTHREE = 3;
         final int DFOUR = 4;
@@ -114,7 +324,30 @@ public class U2_A6_DnDRolloer {
                     break;
                 case 2: //d3
                     rollXTimes = rollTimes();    
-                    System.out.println("The sum of the rolls is: "+dtwoRoll(DTWO, rollXTimes)+"\n");
+                    System.out.println("The sum of the rolls is: "+dthreeRoll(DTHREE, rollXTimes)+"\n");
+                    break;
+                case 3: //d4
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+dfourRoll(DFOUR, rollXTimes)+"\n");
+                    break;
+                case 4: //d6
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+dsixRoll(DSIX, rollXTimes)+"\n");
+                    break;
+                case 5: //d8
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+deightRoll(DEIGHT, rollXTimes)+"\n");
+                    break;
+                case 6: //d10
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+dtenRoll(DTEN, rollXTimes)+"\n");
+                    break;
+                case 7: //d20
+                    rollXTimes = rollTimes();    
+                    System.out.println("The sum of the rolls is: "+dtwentyRoll(DTWENTY, rollXTimes)+"\n");
+                    break;
+                case 8: //close program
+                    continueLoop = exitLaunch(continueLoop);
                     break;
             }
         }
