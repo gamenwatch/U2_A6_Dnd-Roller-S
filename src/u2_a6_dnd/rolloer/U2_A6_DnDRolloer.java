@@ -13,7 +13,7 @@ import java.util.Random;
 /**
  * Jacob Lacey
  * Nov 21, 2018
- * Allows you to roll a vast amount of different dies
+ * Allows you to roll a vast amount of different dies, any number of times
  */
 public class U2_A6_DnDRolloer {
     
